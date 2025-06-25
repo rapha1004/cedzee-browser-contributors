@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CEDZEE Search Engine - contributors</title>
+    <title>CEDZEE Browser - Contributors</title>
     <style>
       body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -78,8 +78,8 @@
   <body>
     <h1>Contributors - CEDZEE Browser</h1>
     <p class="intro">
-      Voici les développeurs qui font tourner la machine derrière CEDZEE.  
-      Clique sur leur pseudo pour checker leur profil GitHub et découvrir leur taf !
+      Meet the developers powering the CEDZEE Browser.<br />
+      Click their username to check out their GitHub profile and see their work!
     </p>
 
     <div class="contributors-wrapper">
@@ -103,7 +103,7 @@
               <img src="${user.avatar_url}" alt="${user.login}'s avatar" />
               <p>${user.login}</p>
               <a href="${user.html_url}" target="_blank" rel="noopener noreferrer">
-                Voir profil GitHub
+                View GitHub profile
               </a>
             `;
 
@@ -111,7 +111,7 @@
           });
         })
         .catch((err) => {
-          wrapper.innerHTML = `<p style="color: #f00;">Erreur chargement contributeurs 😢</p>`;
+          wrapper.innerHTML = `<p style="color: #f00;">Failed to load contributors 😢</p>`;
           console.error(err);
         });
     </script>
